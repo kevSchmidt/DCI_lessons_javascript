@@ -74,17 +74,26 @@ let array2 = [10, 20];
 let arrayTotal = array1.concat(array2);
 console.log(arrayTotal);
 
-// Array.filter()
-let result1 = arrayOfName.filter(name => name.length == 4);
-console.log(result1); // creates a new array
-
 // Array.find()
-let result2 = arrayOfName.find(name => name == "Hadi");
-console.log(result2);
-let result3 = arrayOfName.find(name => name[0] == "A");
-console.log(result3); // returns the value of the first element
+let names = [`Ali`, `Nancy`, `Olga`, `Hadi`];
+let result = names.find(name => name.length >= 4);
+console.log(result);
+
+// Array.filter()
+result = names.filter(name => name.length == 4);
+console.log(result);
 
 // Array.map()
-const intArray = [2, 3, 5];
-let result4 = intArray.map(x => x + 1);
-console.log(result4); // creates a new array
+names.map(x => console.log(x));
+
+// Array.reduce()
+let letters = [`a`, `z`, `c`, `d`];
+let numbers = [12, 24, 1, 3, 4, 6];
+result = numbers.reduce((acc, cur) => acc + cur) / numbers.length;
+console.log(result);
+
+// Array.sort()
+letters.sort();
+console.log(letters);
+let sortNumbers = numbers.sort((a, b) => a - b);
+console.log(numbers);

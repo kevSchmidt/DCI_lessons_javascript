@@ -81,3 +81,34 @@ const red = new Color();
 red.name = `red`;
 red.age = 156;
 console.log(red);
+
+//-------------------------------------------------Extends---------------------------------------------------//
+
+class Character {
+  constructor(_name, _age) {
+    this.name = _name;
+    this.age = _age;
+  }
+  display() {
+    console.log(`Hey ${this.name}`);
+  }
+}
+
+class Kid extends Character {
+  // inheriting the method from the original class which being called
+  constructor(_name, _age, _hight) {
+    super(_name, _age); // take values from original class Character
+    this.hight = _hight; // new value only this class
+  }
+  show() {
+    return `${this.name} is ${this.age} years old, I am child class`;
+  }
+}
+let julian = new Kid("Julian", 18);
+julian.display(); // from Character class
+console.log(julian.show()); // from Kid class
+julian.increment = function() {
+  // adding a method just for Julian
+  console.log("New method just for Julian");
+};
+julian.increment();
