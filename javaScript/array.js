@@ -1,13 +1,9 @@
-// <!-- ----------------------------------------------- -->
-// <!-- ---------------------Array--------------------- -->
-// <!-- ------(using const is more secured.)----------- -->
+//------------------------------------------------Array----------------------------------------------------------//
 
-// 1st way
-let arrayString = [`Hi, hello, ciao`];
+let arrayString = [`Hi, hello, ciao`]; // 1st way to declare an array
 console.log(arrayString);
 
-// 2nd way
-let arrayInt;
+let arrayInt; // 2nd way
 arrayInt = [];
 arrayInt[0] = 1;
 arrayInt[1] = 2;
@@ -20,14 +16,14 @@ for (let i = 0; i <= 3; i++) {
 }
 console.log(arrStringName);
 
-// .push() and .unschift()
+// .push() and .unshift()
 arrayInt.push(999);
 console.log(arrayInt); // pushing value to the last element
 arrayInt.unshift(0.5);
 console.log(arrayInt); // pushing value to the first element
 
 // Array.pop() and Array.shift()
-let emojiArray = ["😎", "💪🏻", "😊"];
+let emojiArray = ["😎", "😋", "😊"];
 emojiArray.pop();
 console.log(emojiArray); // removing last element
 emojiArray.shift();
@@ -43,7 +39,7 @@ console.log(firstNameArr.indexOf("Hadi")); // -1 = value not in array
 console.log(firstNameArr.indexOf("Nancy")); // other = value of the index level
 
 // Array.slice()
-let names = ["Hadi", "Ali", "Nancy", "Dany"]; // array
+let names = ["Hadi", "Ali", "Nancy", "Danny"]; // array
 let name = "This is long text"; // string
 console.log(names.slice(3));
 console.log(names.splice(0, 2));

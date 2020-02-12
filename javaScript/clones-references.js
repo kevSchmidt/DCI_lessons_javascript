@@ -1,22 +1,5 @@
-const objects = [
-  {
-    name: `ali`,
-    lastName: `see`
-  },
-  {
-    name: "Olga",
-    lastName: `xs`,
-    printOut: function() {
-      console.log("Hi");
-    }
-  }
-];
-// dot
-objects[1].printOut();
-// bracket
-objects[1]["printOut"]();
+//-------------------------------------------------clones vs. References-------------------------------------------//
 
-//-------------------clones vs. References-------------------//
 let str = `Clone me`;
 let newStr = str; // cloning
 console.log(newStr);

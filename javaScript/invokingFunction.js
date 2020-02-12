@@ -1,4 +1,4 @@
-// Functions inside functions
+//--------------------------------------------Functions inside functions--------------------------------------------//
 
 function main(num, num2) {
   // outer function
@@ -11,7 +11,6 @@ function main(num, num2) {
 console.log(main(3, 4));
 
 // Nested scopes: Accessing outer global variables
-
 const outerFunction = (x, y) => {
   let big = true; // global variable: big = true for the outer function
   console.log(big + ` outerFunction`);
@@ -32,7 +31,6 @@ var example = 3;
 console.log(example); // global value --> 3
 
 // Self-invoking functions
-
 const add = (() => {
   var counter = 0;
   return () => {
@@ -46,7 +44,6 @@ add(); // 2
 console.log(add()); // 3
 
 // Self-Invoked Anonymous Function Expression(SIAF)
-
 (function() {
   // function close to itself: more secured against hackers (cannot call the function)
   console.log("Hello");
@@ -58,8 +55,6 @@ const sum = ((x, y) => {
   return x + y;
 })(2, 3);
 console.log(sum);
-
-//---------------------------------------------
 
 // trim()
 let str = "    Hi     ";

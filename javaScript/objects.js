@@ -1,6 +1,6 @@
-// Objects
-// keys, properties : value
+//--------------------------------------------------Objects-------------------------------------------------------//
 
+// keys, properties : value
 const object = {
   name: `Nancy`,
   lastName: `Smith`,
@@ -8,29 +8,24 @@ const object = {
   address: `Berliner str. 3`,
   kids: ["Lena", "Tom"]
 };
-
 const save = new Object();
 
 // Accessing properties with bracket notation
-
 const car = {};
 car["name"] = "Ford";
 car["year"] = 220;
 
 // Accessing properties with dot notation
-
-car.age = 22; // careful: change last value of age
-car.color = "Blue";
+car.age = 22;
+car.color = "Blue"; // careful: change last value of color
 console.log(car.color); // access a value in object
 
 // With for
-
 for (let property in car) {
   console.log(`car.${property} : ${car[property]}`);
 }
 
 // Object.entries()
-
 const person = {
   name: `Kevin`,
   age: 27,
@@ -75,7 +70,6 @@ console.log(Object.keys(person));
 console.log(Object.values(person));
 
 // Object.assign()
-
 const obj1 = { 1: 2, 2: 300 };
 const obj2 = { 1: 4, 3: 3224 };
 const totalObj = Object.assign(obj1, obj2); // (obj1 = target, obj2 = source)
@@ -83,7 +77,6 @@ console.log(totalObj);
 console.table(person); // print table
 
 // Object.defineProperty()
-
 Object.defineProperty(person, `birthDay`, {
   // object, property name, {values}
   value: 20,
@@ -92,7 +85,6 @@ Object.defineProperty(person, `birthDay`, {
 console.log(person.birthDay);
 
 // Object.defineProperties()
-
 Object.defineProperties(person, {
   part1: {
     value: [],
@@ -105,7 +97,6 @@ Object.defineProperties(person, {
 });
 
 // Object.prototype.hasOwnProperty
-
 const newPerson = {
   hight: 177,
   age: 34,
