@@ -7,7 +7,6 @@
 // amplify(4) ➞ [1, 2, 3, 40]
 // amplify(3) ➞ [1, 2, 3]
 // amplify(25) ➞ [1, 2, 3, 40, 5, 6, 7, 80, 9, 10, 11, 120, 13, 14, 15, 160, 17, 18, 19, 200, 21, 22, 23, 240, 25]
-
 const amp = num => {
   let result = [];
   let ampByTen = 0;
@@ -28,7 +27,6 @@ console.log(amp(25));
 // unique([3, 3, 3, 7, 3, 3]) ➞ 7
 // unique([0, 0, 0.77, 0, 0]) ➞ 0.77
 // unique([0, 1, 1, 1, 1, 1, 1, 1]) ➞ 0
-
 function unique(arr) {
   let currentValue = 0;
   let current = [];
@@ -50,20 +48,12 @@ function unique(arr) {
 let ar = [1, 1, 1, 1, 4, 1];
 console.log(unique(ar));
 
-function functionName() {
-  const firstNumber = 10;
-  const secondNumber = 20;
-  return `The sum is ${firstNumber + secondNumber}! \n Goodbye.`;
-}
-console.log(functionName());
-
 // c4n y0u r34d th15? Create a function that takes a string as an argument and returns a coded (h4ck3r 5p34k) version of the string.
 //  NB: for your program to work properly, the function should replace all ’a’s with 4, ’e’s with 3, ’i’s with 1, ’o’s with 0, and ’s’s with 5.
 // Examples:
 // hackerSpeak(“javascript is cool”) ➞ “j4v45cr1pt 15 c00l”
 // hackerSpeak(“programming is fun”) ➞ “pr0gr4mm1ng 15 fun”
 // hackerSpeak(“become a coder”) ➞ “b3c0m3 4 c0d3r”
-
 const hacking = str => {
   let hackedArray = [];
   let toSmall = str.toLowerCase();
@@ -102,7 +92,6 @@ console.log(hacking(randomString));
 // isSymmetrical(44444444) ➞ true
 // isSymmetrical(9939) ➞ false
 // isSymmetrical(1112111) ➞ true
-
 function isSymmetrical(num) {
   let numStr = num.toString();
   let result = numStr

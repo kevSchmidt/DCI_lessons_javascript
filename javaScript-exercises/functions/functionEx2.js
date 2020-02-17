@@ -13,27 +13,25 @@
 function pigLatin(parameter) {
   let translation = [];
   const vowels = ["a", "e", "i", "o", "u"];
-  let lowerCase = parameter.toLowerCase();
-  let splitString = lowerCase.split(" ");
+  let splitString = parameter.toLowerCase().lowerCase.split(" ");
   for (i = 0; i < splitString.length; i++) {
-    let firstCharacter = splitString[i][0]; // grab first character for each index (round 1: grab c) [round 2: grab a]
-    let remainder = splitString[i].slice(1, splitString[i].length); // grab the rest of characters for each index  (round 1: grab a t s) [round 2: grab r e]
+    let firstCharacter = splitString[i][0];
+    let remainder = splitString[i].slice(1, splitString[i].length);
     if (vowels.includes(firstCharacter)) {
       const firstCharValue = i
         ? firstCharacter
         : firstCharacter + remainder + "way"; // i = 0 -> false, otherwise true [round 2: false]
-      translation.push(firstCharValue); // [round 2: push a r e w a y]
+      translation.push(firstCharValue);
     } else {
       if (i == 0) {
-        let firstCharRemainder = remainder[0]; // grab first character from the remainder  (round 1: grab a)
-        let wordRemainder = remainder.slice(1, remainder.length); // grab the rest of characters from the remainder (round 1: grab t s)
-        remainder = firstCharRemainder.toUpperCase() + wordRemainder; // capital letter on first character of the remainder (round 1: A + t s)
+        let firstCharRemainder = remainder[0];
+        let wordRemainder = remainder.slice(1, remainder.length);
+        remainder = firstCharRemainder.toUpperCase() + wordRemainder;
       }
     }
-    const newString = remainder + firstCharacter + "ay"; // add first character and ay at the end of the remainder (round 1: A + t s + c + ay) [round 2: r e + a + a y]
-    translation.push(newString);
+    const newString = remainder + firstCharacter + "ay";
   }
-  let result = translation.join(" "); // join array (round 1: Atscay) [round 2: areway reaay]
+  let result = translation.join(" ");
   return result;
 }
 const stringPig = "Cats are great pets";
