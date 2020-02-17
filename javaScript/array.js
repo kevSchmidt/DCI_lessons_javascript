@@ -1,13 +1,9 @@
 //------------------------------------------------Array----------------------------------------------------------//
 
 let arrayString = [`Hi, hello, ciao`]; // 1st way to declare an array
-console.log(arrayString);
-
-let arrayInt; // 2nd way
-arrayInt = [];
+let arrayInt = []; // 2nd way
 arrayInt[0] = 1;
 arrayInt[1] = 2;
-console.log(arrayInt);
 
 // Array and For are best friends
 let arrStringName = [];
