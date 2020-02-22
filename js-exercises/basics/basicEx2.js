@@ -7,7 +7,6 @@ conc = var1 + var2; // concatenate
 console.log(`${var1}${var2}`);
 console.log(conc);
 console.log(var1 + var2);
-
 // 2. Check if the following numbers are even numbers. Use a ternary and if the number is even print 30 is even, else print that it is odd.
 let w = 30;
 w == 30 ? console.log("30 is even") : console.log("odd");
@@ -18,7 +17,6 @@ console.log(numOdd == 0 ? "is even" : "is odd");
 let num101 = 30;
 let numOdd2 = num101 % 2;
 console.log(numOdd2 == 0 ? `${num101} is even` : `${num101}is odd`);
-
 // 3. Create a new string from a given string by changing the position of first and last characters. The string length must be greater than or equal to 1. eg. of output JavaScript => tavaScripJ
 let char1 = var1[0];
 let char2 = var1[var1.length - 1];

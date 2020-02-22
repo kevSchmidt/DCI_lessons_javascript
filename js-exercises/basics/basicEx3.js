@@ -10,7 +10,8 @@ console.log(parseFloat(var2));
 isDog = true;
 console.log(isDog ? "pat, pat" : "find me a dog to pat!");
 
-// Declare a variable named speedCheck. If speed limit is 50km/h, and your speed is above that, print ‘you’re going too fast!’. If speed is lower than 50km/h, print ‘You’re driving below the speed limit, Oma’.
+// Declare a variable named speedCheck. If speed limit is 50km/h, and your speed is above that, print ‘you’re going too fast!’.
+// If speed is lower than 50km/h, print ‘You’re driving below the speed limit, Oma’.
 speedCheck = 85;
 speedLimit = 50;
 console.log(
@@ -34,16 +35,12 @@ console.log(okMarie.includes("cake") ? "let them eat cake" : "oh, bother");
 // 1. Minimum and maximum
 // a. Lowest Number : Print out the lowest number between -1 and 4.
 console.log(Math.min(-1, 0, 1, 2, 3, 4));
-
 // b. Highest Number : Print out the highest number between -1 and 4.
 console.log(Math.max(-1, 0, 1, 2, 3, 4));
-
 // 2. Rounding
 // a. Round up : Round up the following numbers: 3321, 326.76, -9.78, 43.342.
 console.log(Math.floor(326.76));
-
 // b. Round down : Round down the following numbers: 3321, 326.76, 76788.7, -9.78.
 console.log(Math.ceil(326.76));
-
 // 3. Dice Roll! Create a program that prints a random integer from 1 - 6.
 console.log(Math.floor(Math.random() * 6) + 1);

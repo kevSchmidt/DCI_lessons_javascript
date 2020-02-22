@@ -1,4 +1,4 @@
-//-------------------------------------------------------------Array--------------------------------------------------------------------------//
+// ****ARRAY****
 
 // The push() method adds one or more elements to the end of an array.
 const animals = ["pigs", "goats", "sheep"];

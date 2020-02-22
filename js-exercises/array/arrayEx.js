@@ -1,32 +1,28 @@
-//1. Declare a variable named “euroCities” and assign an array to the variable e.g. [“Paris”, “London”, “Valletta”, “Prague”, “Rome”].
+// 1. Declare a variable named “euroCities” and assign an array to the variable e.g. [“Paris”, “London”, “Valletta”, “Prague”, “Rome”].
 // Declare another variable and assign the second item of the array as a value.
 var euroCities = ["Paris", "London", "Valletta", "Prague", "Rome"];
 var firstVar = euroCities[1];
-
-//2. Change the first item in the array to “Berlin”.
+// 2. Change the first item in the array to “Berlin”.
 euroCities[0] = "Berlin";
 console.log(euroCities);
-
-//3. Print the length of the array “euroCities”.
+// 3. Print the length of the array “euroCities”.
 console.log(euroCities.length);
-
-//4. Remove the last item of the array “euroCities”.
+// 4. Remove the last item of the array “euroCities”.
 euroCities.pop();
 console.log(euroCities);
-
-//5. Use an array method to add “Budapest” to the euroCities array.
+// 5. Use an array method to add “Budapest” to the euroCities array.
 euroCities.push("Budapest");
 console.log(euroCities);
-
-//6. Create another variable named asianCities and assign an array of at least 5 cities to the variable.
+// 6. Create another variable named asianCities and assign an array of at least 5 cities to the variable.
 var asianCities = ["Hong Kong", "Pekin", "Hanoi", "Tokyo", "Kyoto"];
 console.log(euroCities);
-
-//7. Use an array method to select items 2-4 from the array of asianCities and store this in another variable.
+// 7. Use an array method to select items 2-4 from the array of asianCities and store this in another variable.
 let newArr = asianCities.splice(1, 3);
 console.log(newArr);
 
-// sumOfNumbers. Create a program that adds up the numbers in an array (of at least 3 numbers). Bonus: Print to screen both the sum and the product of these numbers.
+// sumOfNumbers.
+// Create a program that adds up the numbers in an array (of at least 3 numbers).
+// Bonus: Print to screen both the sum and the product of these numbers.
 let intArr = [2, 4, 5, 7];
 let result = 0;
 let product = 1;
@@ -38,7 +34,8 @@ console.log(
   `The sum for your Array is ${result}, The product for your Array is ${product}.`
 );
 
-// Hello Frien Create an array filled with your friends’ and family’s names. Loop over the array and greet each friend e.g. Hello Maria!
+// Hello Frien
+// Create an array filled with your friends’ and family’s names. Loop over the array and greet each friend e.g. Hello Maria!
 // Hello Mike! etc. Bonus: Print the indexes of each item in the array.
 // Expected output example: Mike is at index 1 of my friends array.
 const names = ["Hadi", "Ali", "Olga", "Nancy"];

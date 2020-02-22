@@ -1,4 +1,4 @@
-//----------------------------------------------------------Parse Expressions--------------------------------------------------------------------//
+// ****PARSE EXPRESSIONS****
 
 // The parseFloat() function: parses an argument (converting it to a string first if needed) and returns a floating point number.
 function circumference(r) {
@@ -18,7 +18,7 @@ function roughScale(x, base) {
 console.log(roughScale(" 0xF", 16)); // expected output: 1500
 console.log(roughScale("321", 2)); // expected output: 0
 
-//--------------------------------------------------------Math Expressions------------------------------------------------------------------//
+// ****MATHS EXPRESSIONS****
 
 // The Math.ceil() function: always rounds a number up to the next largest whole number or integer.
 console.log(Math.ceil(0.95)); // expected output: 1
