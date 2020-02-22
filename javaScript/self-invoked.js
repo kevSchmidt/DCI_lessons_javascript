@@ -1,4 +1,4 @@
-//--------------------------------------------Functions inside functions--------------------------------------------//
+// ****NESTED FUNCTIONS****
 
 function main(num, num2) {
   // outer function
@@ -50,7 +50,6 @@ console.log(add()); // 3
 })(); // self-invoking
 
 // Immediately-Invoked Function Expression (IIFE)
-
 const sum = ((x, y) => {
   return x + y;
 })(2, 3);

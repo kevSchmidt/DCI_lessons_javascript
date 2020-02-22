@@ -1,4 +1,4 @@
-//------------------------------------------------------------first-fake-test---------------------------------------------------------------//
+// ****FAKE TEST FROM FEBRUARY****
 
 // Return Keys and Values. Write a program that takes an object and returns an array which contains two arrays:
 // one for the keys of the object and the other for the values of the object.

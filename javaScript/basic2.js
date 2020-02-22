@@ -1,15 +1,17 @@
+// ****BASIC****
+
 // ++ += -- -=
 let num1 = 1;
 num1 = num1 + 1; // 1 + 1 = 2
 num1 += 4; // 2 + 4 = 6
 
 // Increment
-// a++;
-// ++a;
+num1++;
+++num1;
 
 // Decrement
-// a--;
-// --a;
+num1--;
+--num1;
 
 // !isNaN()
 let int1 = 2;

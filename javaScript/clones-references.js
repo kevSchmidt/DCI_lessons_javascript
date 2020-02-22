@@ -1,5 +1,6 @@
-//-------------------------------------------------clones vs. References-------------------------------------------//
+// ****CLONES & REFERENCES****
 
+// With String
 let str = `Clone me`;
 let newStr = str; // cloning
 console.log(newStr);

@@ -1,4 +1,4 @@
-//------------------------------------------------Getter and Setter--------------------------------------------------//
+// ****GETTER & SETTER****
 
 const userData = {
   firstName: `Hadi`,
@@ -20,7 +20,7 @@ userData.fullName;
 userData.fullName = "New Name";
 userData.fullName; // getting new Data
 
-//-------------------------------------------------Constructor()----------------------------------------------------//
+// ****CONSTRUCTOR****
 
 function Person(name, age, activities) {
   this.name = name;
@@ -41,13 +41,7 @@ function Name(name, lastName) {
 let kev = new Name(`Kevin`, `Schmidt`);
 kev.printOut();
 
-//-----------------------------------------------------Class-------------------------------------------------------//
-
-// We use class to create one or more objects, you can't use it instance in you application but it will
-// be like a for a newer objects if you will. The class will have for instances properly and can have instances method,
-// ideally we use the properties in the method to achieve a task. The class will have also a constructor,
-// this bad boy will run only ones when the object being created, we use constructor function to setup the object
-// class declaration creates a new class with a name that you give, you would  use prototype-based inheritance.
+// ****CLASSES****
 
 // Parameters inside declaration
 class Animals {
@@ -82,7 +76,7 @@ red.name = `red`;
 red.age = 156;
 console.log(red);
 
-//-------------------------------------------------Extends---------------------------------------------------//
+// ****EXTENDS****
 
 class Character {
   constructor(_name, _age) {

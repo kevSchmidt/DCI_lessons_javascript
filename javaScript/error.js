@@ -1,7 +1,7 @@
-//-------------------------------------------------------Error--------------------------------------------------------//
+// ****ERRORS****
 
 // 3 types of errors (compilation aka compiler fails to compile, runtime, logic)
-// try : test a block of code
+// try -> test a block of code
 // trow -> create a custom error
 // catch -> catch the error in try
 let userName = "";

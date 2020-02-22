@@ -1,4 +1,4 @@
-//------------------------------------------------Array----------------------------------------------------------//
+// ****ARRAY****
 
 let arrayString = [`Hi, hello, ciao`]; // 1st way to declare an array
 let arrayInt = []; // 2nd way
