@@ -54,8 +54,10 @@ function userAge(num) {
 }
 console.log(userAge(1993));
 
-// Count Occurrences. Create a function that accepts two arguments: a string and a letter. The function should count the number of occurrences of that letter in the string.
-// i.e. countOccurrences(“this is a string”, “i”) ➞ 3
+// **Count Occurrences**
+// - Create a function that accepts two arguments: a string and a letter.
+// The function should count the number of occurrences of that letter in the string.
+// countOccurrences(“this is a string”, “i”) ➞ 3
 function occurrences(string, letter) {
   let str = string.split(letter).length - 1;
   return str;
