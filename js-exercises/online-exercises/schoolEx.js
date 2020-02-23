@@ -7,6 +7,7 @@ function exercise1(str) {
 exercise1("I love JavaScript but it drive me crazy");
 
 // Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
+// **Examples**
 // dictionary("bu", "button") ➞ true
 // dictionary("tri", "triplet") ➞ true
 function strWordCheck(str, word) {
@@ -26,13 +27,13 @@ console.log(strWordCheck("hello", "Hello, World"));
 const twofer = (who = "you") => {
   return `Two for me and one for ${who}`;
 };
-
 console.log(twofer("Ali")); // -> "Two for me and one for Ali"
 console.log(twofer()); // -> "Two for me and one for you"
 
 // Complete the function below so that it still calculates the power of a number even if the `exp` argument is not passed to it.
 // The default `exp` should be set to 2.
-// Example: Calling the function with 2 and 4 will return 16 (2 to the power of 4), If you call it with just 2, it should return 4 (2 to the power of 2).
+// **Example**
+// Calling the function with 2 and 4 will return 16 (2 to the power of 4), If you call it with just 2, it should return 4 (2 to the power of 2).
 const expo = (num, exp = 2) => {
   let result = 1;
   for (let i = 0; i < exp; i++) {
