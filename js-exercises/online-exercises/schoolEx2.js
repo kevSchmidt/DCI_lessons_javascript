@@ -1,12 +1,11 @@
 // **Longest Sequence of Consecutive Zeroes**
-// Write a function that returns the longest sequence of consecutive zeroes in a binary string.
+// - Write a function that returns the longest sequence of consecutive zeroes in a binary string.
 // ** Examples**
 // longestZero("01100001011000") ➞ "0000"
 // longestZero("100100100") ➞ "00"
 // longestZero("11111") ➞ ""
 // NB. If no zeroes exist in the input, return an empty string.
-console.log("Exercise: Longest Sequence of Consecutive Zeroes");
-
+console.log("------Longest Sequence of Consecutive Zeroes------");
 const longestZero = str => {
   // we split the string at each 1
   let splitStr = str.split("1");
@@ -31,8 +30,7 @@ console.log(longestZero("11111"));
 // flash([10, "/", 3]) ➞ 3.33
 // **Notes**
 // Flash cards contain only zero or positive numbers.
-console.log("Exercise: Flash Cards");
-
+console.log("------Flash Cards------");
 const flash = arr => {
   // we create our variables for our operations
   let div = arr[0] / arr[2];
@@ -63,43 +61,14 @@ console.log(flash([10, "/", 0]));
 console.log(flash([10, "/", 3]));
 console.log(flash([3, "x", -7]));
 
-// ### Bonus Tetris:
-// The pieces you are given in a game of Tetris are not randomly selected. Instead, all seven pieces are placed into a "bag." A piece is randomly removed from the bag and presented to the player until the bag is empty. When the bag is empty, it is refilled and the process is repeated for any additional pieces that are needed.
-// In this way, it is assured that the player will never go too long without seeing a particular piece.
-// The pieces are as follows:
-// O, I, S, Z, L, J, T
-// #### Task:
-// Output a string signifying 50 tetromino pieces given to the player using the random bag system.
-// #### Examples:
-// LJOZISTTLOSZIJOSTJZILLTZISJOOJSIZLTZISOJTLIOJLTSZO
-// OTJZSILILTZJOSOSIZTJLITZOJLSLZISTOJZTSIOJLZOSILJTS
-// ITJLZOSILJZSOTTJLOSIZIOLTZSJOLSJZITOZTLJISTLSZOIJO
-// They do not need to be in one line.
-console.log("Exercise: Tetris");
-
-letters = ["O", "I", "S", "Z", "L", "J", "T"];
-function tetris(x) {
-  random = [];
-  newLine = 7;
-  for (let i = 1; i <= 49; i++) {
-    random += letters[Math.floor(Math.random() * letters.length)];
-    if (random.length == newLine) {
-      random += "\n";
-      newLine += 8;
-    }
-  }
-  return random;
-}
-console.log(tetris(letters));
-
-// 5. FixStart
-// Create a function called fixStart. It should take a single argument, a string, and return a version where
-// all occurences of its first character have been replaced with '*', except for the first character itself.
-// Examples:
+// **FixStart**
+// - Create a function called fixStart. It should take a single argument, a string, and return a version where all occurrences of its
+// first character have been replaced with '*', except for the first character itself.
+// **Examples**
 // fixStart("babble") -> "ba**le"
 // fixStart("people") -> "peo*le"
 // fixStart("nonsense") -> "no*se*se"
-console.log("Exercise: fixStart");
+console.log("------fixStart version 1------");
 const fixStart = str => {
   let splitString = str.split("");
   let firstLetter = splitString[0];
@@ -111,7 +80,8 @@ const fixStart = str => {
     }
   return firstLetter + restStr.join("");
 };
-//-----------------------------------//
+// Version 2
+console.log("------fixStart version 2------");
 const fixStart2 = string => {
   const array = string.split("");
   for (let i = 1; i < array.length; i++) {
@@ -120,7 +90,6 @@ const fixStart2 = string => {
   }
   return array.join("");
 };
-
 console.log(fixStart("babble"));
 console.log(fixStart("people"));
 console.log(fixStart("nonsense"));
@@ -139,7 +108,7 @@ console.log(fixStart("nonsense"));
 // progressDays([9, 9])  ➞ 0
 // **Notes**
 // Running the same number of miles as last week does not count as a progress day.
-console.log("Exercise: progressDays");
+console.log("------progressDays------");
 const progressDays = array => {
   let counter = 0;
   for (let i = 0; i < array.length; i++) {
@@ -173,7 +142,7 @@ console.log(progressDays([9, 9]));
 // }) ➞ "Sam"
 // **Notes**
 // All ages will be different.
-console.log("Exercise: oldest");
+console.log("------oldest------");
 const oldest = obj => {
   // we create our variables
   let nums = 0;
@@ -190,6 +159,11 @@ const oldest = obj => {
   }
   return name;
 };
+// const oldest2 = obj => {
+//   let biggerNumber = Math.max(...Object.values(obj));
+//   return Object.keys(obj).find(keyWeNeed => obj[keyWeNeed] === biggerNumber);
+// };
+
 console.log(
   oldest({
     Emma: 71,
@@ -207,24 +181,8 @@ console.log(
   })
 );
 
-//---------------------------------------------//
-
-const oldest2 = obj => {
-  let biggerNumber = Math.max(...Object.values(obj));
-  return Object.keys(obj).find(keyWeNeed => obj[keyWeNeed] === biggerNumber);
-};
-console.log(
-  oldest2({
-    Max: 9000,
-    Josh: 1437,
-    Sam: 488,
-    Anne: 339
-  })
-);
-
 // **Contact List**
-// -Write a sorting function that takes in an array of names and sorts them by last name either
-// alphabetically (ASC) or reverse-alphabetically (DESC).
+// - Write a sorting function that takes in an array of names and sorts them by last name either alphabetically (ASC) or reverse-alphabetically (DESC).
 // **Notes**
 // An array with a single name should be trivially returned.
 // An empty array, or an input of null or undefined should return an empty array.
@@ -240,8 +198,7 @@ console.log(
 //   "David Hume",
 //   "John Locke"
 // ]
-// // Aquinas (A) < Descartes (D) < Hume (H) < Locke (L)
-
+// Aquinas (A) < Descartes (D) < Hume (H) < Locke (L)
 // sortContacts([
 //   "Paul Erdos",
 //   "Leonhard Euler",
@@ -255,3 +212,24 @@ console.log(
 // sortContacts([], "DESC") ➞ []
 // sortContacts(null, "DESC") ➞ []
 // sortContacts(undefined, "DESC") ➞ []
+console.log("------Contact list------");
+
+const sortContacts = (arr, order = "ASC") => {
+  if (arr == null) {
+    return [];
+  }
+  const SORT = order;
+  const NAMES = arr;
+​
+  switch (SORT) {
+    case "ASC":
+      result = NAMES.sort();
+      break;
+​
+    case "DESC":
+      result = NAMES.sort().reverse();
+      break;
+  }
+​
+  return result;
+};

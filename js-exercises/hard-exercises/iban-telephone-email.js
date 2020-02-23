@@ -1,11 +1,12 @@
-// Validate Email. Create a function that takes a string, checks if it’s a valid email address, and then accordingly returns either true or false.
+// **Validate Email**
+// - Create a function that takes a string, checks if it’s a valid email address, and then accordingly returns either true or false.
 // The string must contain an “@” character.
 // The string must contain a “.” character.
 // The “@” must have at least one character in front of it.
 // e.g. “john@example.com” is valid while “@example.com” is invalid.
 // The “.” and the “@” must be in the appropriate places.
 // e.g. “john.smith@com” is invalid while “john.smith@email.com” is valid.
-
+console.log("------Validate Email------");
 function validate(email) {
   let atSymbolPosition;
   let dotPosition;
@@ -26,9 +27,11 @@ function validate(email) {
 console.log(validate("kevin-schmidt@gmail.com"));
 console.log(validate("@kev-schmidt.com"));
 
-// Create a function that receive a text from user and check if the user has entered a phone number, and print that out.
-// Note : phone number should be within the German network starts with (030,017) and has 7 digits after the prefix number.
-
+// **Phone numbers**
+// - Create a function that receive a text from user and check if the user has entered a phone number, and print that out.
+// **Note**
+// Phone number should be within the German network starts with (030,017) and has 7 digits after the prefix number.
+console.log("------Phone numbers version1------");
 function exercise3(str) {
   string = str.toLowerCase().split(" "); // console.log(string);
   const prefix = ["030", "017"];
@@ -47,37 +50,8 @@ function exercise3(str) {
 }
 console.log(exercise3("Hello I am Kevin and my num is 0171234567"));
 
-// or
-
-function simonaFunction(num) {
-  // console.log(num);
-  stringSplit = num.toLowerCase().split(" ");
-  //console.log(stringSplit);
-  numSplit = stringSplit[5].toLowerCase().split(" ");
-  //console.log(typeof numSplit) //it is an object now
-  numString = numSplit.toString(); //the number is a string
-  //console.log(numString[2]);
-  //console.log(typeof numString);
-  const isNotNumber = isNaN(numString);
-  //console.log(isNotNumber) //check if it is a number
-  if (
-    (numString[0] === "0" && numString[1] === "3" && numString[2] === "0") ||
-    (numString[0] === "0" &&
-      numString[1] === "1" &&
-      numString[2] === "7" &&
-      numString.length === 10 &&
-      !isNotNumber)
-  ) {
-    console.log("This is a valid number");
-  } else {
-    console.log("This is not a valid number");
-  }
-}
-simonaFunction("This is a message from 0300123456");
-simonaFunction("This is a message from 0171zz2555");
-
-// or
-
+// Version 2
+console.log("------Phone numbers version2------");
 const phone = str => {
   let result = "";
   let counter = 0;
@@ -102,9 +76,11 @@ const phone = str => {
 console.log(phone("Hi my 030221A398 number is "));
 console.log(phone("I have a phone number 030221221"));
 
-// Write a function that checks whether the user has entered a valid German bank account.
-// Note: German bank accounts should starts with  DExxxxxxxxxxxxxxxxxxxx and has 20 number.
-
+// **Bank account**
+// - Write a function that checks whether the user has entered a valid German bank account.
+// **Note**
+// German bank accounts should starts with  DExxxxxxxxxxxxxxxxxxxx and has 20 number.
+console.log("------Bank account------");
 const bankChecker = str => {
   let result = "";
   let counter = 0;

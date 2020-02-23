@@ -1,5 +1,8 @@
-// Creat a function that give your zodiac sign
+// **Zodiac**
+// - Creat a function that give your zodiac sign.
 
+// First version
+console.log("------Zodiac version1------");
 function newObject(name, day, month, year) {
   let userDay = day;
   let userMonth = month;
@@ -63,10 +66,10 @@ function newObject(name, day, month, year) {
     console.log("Please enter a valid day or month");
   }
 }
-newObject(`Hadi`, `1`, `08`, `1989`); // Bad function <3
+newObject(`Hadi`, `1`, `08`, `1989`);
 
-//---------------------------------------------------------Claudinei----------------------------------------------------------------------------//
-
+// Second version
+console.log("------Zodiac version2------");
 function zodiac(name, day, month, year) {
   const lastDay = [19, 18, 20, 20, 21, 21, 22, 22, 21, 22, 21, 20, 19];
   const signs = [
@@ -85,7 +88,6 @@ function zodiac(name, day, month, year) {
     "Capricorn"
   ];
   const userData = {
-    // link parameters(day, month) with userData
     userName: name,
     firstDay: day,
     firstMonth: month,
@@ -103,8 +105,8 @@ function zodiac(name, day, month, year) {
 }
 console.log(zodiac("Kevin", 14, 02, 1993));
 
-//--------------------------------------------------------Kevin/Mauricio---------------------------------------------------------------------------------------//
-
+// Third version
+console.log("------Zodiac version3------");
 const zodiacObj = {
   // object with zodiac sign and their last days
   Capricorn1: 19,

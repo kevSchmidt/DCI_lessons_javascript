@@ -1,11 +1,13 @@
-// Addition. Write a program to add up the numbers 1 to 20.
+// **Addition**
+// Write a program to add up the numbers 1 to 20.
 let sumCounter = 0;
 for (i = 1; i <= 20; i++) {
   sumCounter += i;
 }
 console.log(sumCounter);
 
-// There are i bottles of beer on the wall. Write a program that will output,
+// **There are i bottles of beer on the wall**
+// - Write a program that will output:
 // “There is one bottle of beer on the wall.” “There are two bottles of beer on the wall” up until there are five bottles.
 for (let i = 1; i <= 5; i++) {
   if (i == 1) {
@@ -15,8 +17,9 @@ for (let i = 1; i <= 5; i++) {
   }
 }
 
-// The odd/even reporter. Write a program that will iterate from 0 to 20. For each iteration,
-// it will check if the current number is even or odd, and report that to the screen (e.g. “2 is even”).
+// **The odd/even reporter**
+// - Write a program that will iterate from 0 to 20. For each iteration, it will check if the current number is even or odd,
+// and report that to the screen (e.g. “2 is even”).
 for (let i = 0; i <= 20; i++) {
   if (i % 2 == 0) {
     console.log(`${i} is even.`);
@@ -35,7 +38,6 @@ for (i = 0; i <= 10; ) {
   console.log(i);
   i += 2;
 }
-
 // 3, 6, 9 ... 15
 for (i = 3; i <= 15; ) {
   console.log(i);
@@ -62,7 +64,11 @@ for (let i = 0; i <= 4; ) {
     i++;
   }
 }
-
+// @@@@@@
+// @@@@@
+// @@@
+// @@
+// @
 let Tbox = "@@@@@@";
 for (let i = 0; i <= 5; i++) {
   console.log(Tbox.slice(i));

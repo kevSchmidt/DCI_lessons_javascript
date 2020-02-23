@@ -1,5 +1,9 @@
-// Create a function that accepts a text from user and check if the user has entered a month name, if so print out that month and in which season it is.
+// **Months**
+// - Create a function that accepts a text from user and check if the user has entered a month name,
+// if so print out that month and in which season it is.
 
+// With switch case
+console.log("------Months with switch------");
 function isMonth(str) {
   str = str.toLowerCase().split(" ");
   console.log(str);
@@ -50,8 +54,8 @@ function isMonth(str) {
 }
 console.log(isMonth("the best march the best"));
 
-// or
-
+// With if else
+console.log("------Months with if------");
 function monthCheck(string) {
   let months = [
     "december",
@@ -90,7 +94,6 @@ function monthCheck(string) {
     }
     return seasonName;
   };
-  //console.log(months);
   for (let i = 0; i < strToArray.length; i++) {
     if (months.includes(strToArray[i])) {
       let currentWord = strToArray[i];
@@ -108,13 +111,14 @@ function monthCheck(string) {
 console.log(monthCheck("hi is jun"));
 console.log(monthCheck("Hi hi is"));
 
-// Create a function will calculate a student degrees for 6 subjects,
+// **Grades**
+// - Create a function will calculate a student degrees for 6 subjects,
 // if the average was less than 70 will print (F)
 // Over 70 and less than 80 (C)
 // Over than 80 and less than 85 (B)
 // Over than 85 and less than 90 (A)
 // And over 90 print (A+)
-
+console.log("-----Grades version1------");
 function grades(...args) {
   const array = args;
   let sum = 0;
@@ -138,19 +142,19 @@ function grades(...args) {
 }
 console.log(grades(80, 85, 78, 80, 80, 56));
 
-// or
-
+// Version 2
+console.log("------Grades version2------");
 const studentDe = (...args) => {
+  // let sum = 0;
+  // let avg = 0;
+  // console.log(args.length + " length");
+  // sum = args.reduce((acc, cur) => acc + cur);
+  // console.log(sum + " Sum");
+  // avg = Math.floor(sum / args.length);
+  // console.log(avg + " Avg");
   let notesResult = Math.floor(
     args.reduce((acc, cur) => acc + cur) / args.length
   );
-  /*let sum = 0;
-  let avg = 0;
-  console.log(args.length + " length");
-  sum = args.reduce((acc, cur) => acc + cur);
-  console.log(sum + " Sum");
-  avg = Math.floor(sum / args.length);
-  console.log(avg + " Avg"); */
   let result = "";
   if (notesResult > 90) {
     result = `Your average is ${notesResult}, you have A+`;

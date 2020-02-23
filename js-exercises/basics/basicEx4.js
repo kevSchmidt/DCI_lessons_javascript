@@ -80,7 +80,6 @@ let int5div7 = int5 / 7;
 let int5div11 = int6 / 11;
 let int6div7 = int6 / 7;
 let int6div11 = int6 / 11;
-
 let number1 = 1;
 let number2 = 7;
 if (

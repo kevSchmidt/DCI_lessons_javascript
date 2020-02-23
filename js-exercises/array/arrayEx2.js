@@ -4,10 +4,8 @@ const siblings = ["Taka", "Ioannes", "Mauricio", "Claudinei"];
 const parentName = ["Rainer", "Gaelle"];
 // 3. Combine these two array.
 let arrTotal = siblings.concat(parentName);
-console.log(arrTotal);
 // 4. Add your pet's name.
 arrTotal.push("Chanel");
-console.log(arrTotal);
 // 5. Reverse the order of the array.
 arrTotal.reverse();
 // 6. Access one of your parents' name.
@@ -15,7 +13,6 @@ let mum = arrTotal[1];
 // 7. Update the name of one of your parents.
 mum = "Gaelle is my mother";
 arrTotal[1] = mum;
-console.log(arrTotal);
 
 // Reverse the string: “JavaScript”.
 const str = "JavaScript";

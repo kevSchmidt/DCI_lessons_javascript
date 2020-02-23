@@ -1,4 +1,8 @@
+// **Count letters**
+// - Create a function that give th numbers of all letters present in the string.
+// **Example**
 // countLetters(“tree”) -> expected output: t: 1, r: 1, e: 2
+console.log("------Count letters------");
 function countLetter(str) {
   let array = str.split("");
   let result = {};
@@ -19,9 +23,10 @@ function countLetter(str) {
 }
 console.log(countLetter("Tree"));
 
-// Create a function that takes two objects as its parameters and merges them together into a new object.
+// **Object merge**
+// - Create a function that takes two objects as its parameters and merges them together into a new object.
 // Expected output: {firstName: "John", lastName: "Smith"}
-
+console.log("-------Object merge version 1-----");
 let first = { firstName: "John" };
 let last = { lastName: "Smith" };
 function merge(x, y) {
@@ -29,14 +34,16 @@ function merge(x, y) {
 }
 console.log(merge(first, last));
 
+console.log("-------Object merge version 2-----");
 const mergeVersion2 = (x, y) => {
   return { ...x, ...y };
 };
 console.log(mergeVersion2({ place: "Paris", Kids: 17 }, { time: "day" }));
 
-// Switch Keys and Values. Create a function to get a copy of an object.
-// The copy must switch the keys and values. Expected Output: {"John": name, "teacher": job}
-
+// **Switch Keys and Values**
+// - Create a function to get a copy of an object. The copy must switch the keys and values.
+// Expected Output: {"John": name, "teacher": job}
+console.log("------Switch Keys and Values------");
 let person = {
   name: `Ali`,
   job: `teacher`

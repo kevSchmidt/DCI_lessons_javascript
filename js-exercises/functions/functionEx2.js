@@ -1,15 +1,15 @@
-// Pig Latin Translation.
-// Create a function that takes a string of words and moves the first letter of each word to the end of it, then adds ‘ay’ to the end of the word.
+// **Pig Latin Translation**
+// - Create a function that takes a string of words and moves the first letter of each word to the end of it, then adds ‘ay’ to the end of the word.
 // This is a basic form of “Pig Latin”.
 // 1. Move the first letter of each word to the end of the word.
 // 2. Add “ay” to the end of the word.
 // 3. Words starting with a vowel (A, E, I, O, U) append “way” to the end instead.
 // Extra Practice : Preserve proper capitalization as in the examples below.
-// Examples:
-// 1. pigLatin(“Cats are great pets.“) ➞ “Atscay areway reatgay etspay.”
-// 2. pigLatin(“Tom got a small piece of pie.“) ➞ “Omtay otgay away allsmay iecepay ofway iepay.”
-// 3. pigLatin(“He told us a very exciting tale.“) ➞ “Ehay oldtay usway away eryvay excitingway aletay.”
-
+// **Examples**
+// pigLatin(“Cats are great pets.“) ➞ “Atscay areway reatgay etspay.”
+// pigLatin(“Tom got a small piece of pie.“) ➞ “Omtay otgay away allsmay iecepay ofway iepay.”
+// pigLatin(“He told us a very exciting tale.“) ➞ “Ehay oldtay usway away eryvay excitingway aletay.”
+console.log("------Pig Latin Translation------");
 function pigLatin(parameter) {
   let translation = [];
   const vowels = ["a", "e", "i", "o", "u"];
@@ -34,15 +34,15 @@ function pigLatin(parameter) {
   let result = translation.join(" ");
   return result;
 }
-const stringPig = "Cats are great pets";
-console.log(pigLatin(stringPig));
+console.log(pigLatin("Cats are great pets"));
 
-// Print Exponential Values
-// Write a function that accepts two numbers and validate that they are numbers.
+// **Exponential Values**
+// -Write a function that accepts two numbers and validate that they are numbers.
 // After that, the function should print y exponential values starting from x.
-// For example if we have function(3, 5) The function should print 3 9 27 81 243. Prints 5 exponential values of 3.
-// function(2, 8) The function prints 2 4 8 16 32 64 128 256. Prints 8 exponential values of 2.
-
+// **Example**
+// function(3, 5) -> 3 9 27 81 243. Prints 5 exponential values of 3.
+// function(2, 8) -> 2 4 8 16 32 64 128 256. Prints 8 exponential values of 2.
+console.log("------Exponential Values------");
 function printValue(x, y) {
   if (typeof x == "number" && typeof y == "number") {
     let result = 1;
@@ -58,11 +58,12 @@ function printValue(x, y) {
 }
 console.log(printValue(2, 6));
 
-// snake_case ➞ camelCase! Create a function toCamelCase() that takes a single string in snake_case and converts it into camelCase.
-//  Examples:
+// **snake_case ➞ camelCase!**
+// - Create a function toCamelCase() that takes a single string in snake_case and converts it into camelCase.
+// **Examples**
 // toCamelCase(“hello_world”) ➞ “helloWorld”
 // toCamelCase(“javascript_is_fun”) ➞ “javaScriptIsFun”
-
+console.log("------Snake-case to camelCase------");
 const toCamelCase = string => {
   let splitStr = string.split("_");
   let camelArray = [];
@@ -82,3 +83,4 @@ const toCamelCase = string => {
   return result;
 };
 console.log(toCamelCase("snack_log_hi"));
+console.log(toCamelCase("javascript_is_fun"));
