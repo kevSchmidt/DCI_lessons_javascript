@@ -99,7 +99,8 @@ console.log(exercise1("Hello world i am kevin"));
 
 // Create a function which calculates how old a dog is in doggie years. The function should accept one argument that is the puppy’s age in human years.
 // Calculate the dog’s age in dog years based on the calculation of 1 human year = 7 dog years.
-// i.e. dogAge(4) ➞ “Your doggo is 28 years old in dog years!”
+// **Examples**
+// dogAge(4) ➞ “Your doggo is 28 years old in dog years!”
 const dogAge = puppyAge => {
   let result = puppyAge * 7;
   if (puppyAge > 0 && puppyAge < 25) {
@@ -111,7 +112,7 @@ const dogAge = puppyAge => {
 console.log(dogAge(4));
 console.log(dogAge(26));
 
-//  Declarations
+// **Declarations**
 // Create functions (using all three declarations) to check the remainder of division given two numbers.
 function div(a, b) {
   console.log(a % b);
@@ -124,7 +125,7 @@ div(4, 2);
 div1(3, 5);
 div2(4, 2);
 
-// Fruits
+// **Fruits**
 // Create a function named printFavoriteFruit. Declare a variable outside of the function and store your favorite fruit as a value.
 // Reassign the variable within the function and print “My favorite fruit is: x”.
 let fruits = "apple";
@@ -134,7 +135,8 @@ function printFavoriteFruit() {
 }
 printFavoriteFruit();
 
-// Multiply a Number by Itself: Create a function named exponent that takes two numbers as parameters.
+// **Multiply a Number by Itself**
+// - Create a function named exponent that takes two numbers as parameters.
 // The second parameter defines how many times the first number should be multiplied by itself.
 // Save the output in a variable named result.
 // Then, try to access the variable result outside of the exponent function. Is this possible?
