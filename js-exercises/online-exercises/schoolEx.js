@@ -5,8 +5,8 @@ function exercise1(str) {
   }
 }
 exercise1("I love JavaScript but it drive me crazy");
-
-// Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
+// **Word check**
+// - Create a function that takes a string and a word, and then returns true or false depending on whether the word starts with the initial string.
 // **Examples**
 // dictionary("bu", "button") ➞ true
 // dictionary("tri", "triplet") ➞ true
