@@ -117,7 +117,7 @@ console.log(magicSquare([2, 7, 6, 9, 5, 1, 4, 3, 8]));
 console.log(magicSquare([3, 5, 7, 8, 1, 6, 4, 9, 2]));
 console.log(magicSquare("c"));
 
-// **Vampire Number**
+// **Vampire Number*
 // A Vampire Number is a positive integer greater than 99, that rearranged in all of its possible digits permutations,
 // with every permutation being split into two parts, is equal to the product of at least one of its permutations.
 // If the number has an even quantity of digits, left and right parts will have the same length in every permutation;
