@@ -82,7 +82,7 @@ for (let i = 0; i < numArr.length; i++) {
 }
 console.log(newNumArr);
 
-// **Capitalizze**
+// **Capitalize**
 // - Create a program that capitalizes the first letter of each element in an array of names.
 // **Examples**
 // [“matt”, “sara”, “lara”] ➞ [“Matt”, “Sara”, “Lara”]
