@@ -1,3 +1,4 @@
+![](./img/gif.gif)
 # JavaScript vanilla
 Expressions:
 - String expressions
