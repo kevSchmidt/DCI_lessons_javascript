@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Click Me button */
+#click {
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 5%;
+  background-color: lightblue;
+}
+#click:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    to right,
+    rgba(173, 216, 230, 0.9),
+    rgba(173, 216, 230, 0.8),
+    rgba(173, 216, 230, 0.7)
+  );
+}
+#click:hover::after {
+  content: "❤️";
+}
+/* Hide/Show button */
+#sh-btn {
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 5%;
+  background-color: lightblue;
+}
+#box {
+  margin: 2rem 0 0 5rem;
+  width: 40vw;
+  height: 25vh;
+  background-color: #000;
+}
+/* Color button */
+#color {
+  margin: 2rem;
+  padding: 2rem;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 5%;
+  background-color: lightblue;
+}
