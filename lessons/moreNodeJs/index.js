@@ -24,19 +24,17 @@ function avg(numArray) {
 
 // Med
 function med(numArray) {
-  // 1. Sort the set of number
-  numArray.sort((a, b) => {
-    return a - b;
-  });
+  // Sort number
+  let sortedMedian = numArray.sort((a, b) => a - b);
 
-  // 2. Get index of the middle number
-  const midNum = numArray[(numArray.length - 1) / 2];
+  // Get index of the middle
+  medianIndex = sortedMedian.length / 2;
 
-  // 3. Decimal?
-  if (midNum === undefined) {
-    return (numArray.length - 1) / 2 + 1;
+  // Decimal?
+  if (medianIndex % 2 === 0) {
+    return (numArray[medianIndex] + numArray[medianIndex - 1]) / 2;
   }
-  return midNum;
+  return numArray[Math.floor(medianIndex)];
 }
 
 const [operation, ...rest] = args;
