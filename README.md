@@ -1,6 +1,4 @@
-# JavaScript
-
-![](./img/js.gif)
+# ![](./img/js.gif) JavaScript
 
 - Lessons
 - Exercices
