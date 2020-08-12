@@ -1,8 +1,10 @@
-# JavaScript ![](./img/js.gif)
+# JavaScript 
 
 - Lessons
 - Exercices
 - Resources
+
+![](./img/js.gif)
 
 1. [Everything JS](https://javascript.info/)
 2. [Array Exercises](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/store-multiple-values-in-one-variable-using-javascript-arrays)
