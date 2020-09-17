@@ -1,8 +1,5 @@
 # JavaScript 
 
-- Lessons
-- Exercices
-- Resources
 
 ![](./js.gif)
 
